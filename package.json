@@ -1,0 +1,35 @@
+{
+  "name": "my-auction-website",
+  "version": "1.0.0",
+  "description": "\"# my-Auction-Website-node-js\"",
+  "main": "auction.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABENEZER-SELESHI/my-Auction-Website-node-js.git"
+  },
+  "author": "ABENEZER SELESHI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABENEZER-SELESHI/my-Auction-Website-node-js/issues"
+  },
+  "homepage": "https://github.com/ABENEZER-SELESHI/my-Auction-Website-node-js#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bootstrap5": "^1.1.9",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "gsap": "^3.12.5",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.4.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "validator": "^13.12.0"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post.css?v=1.0">
+    <link rel="stylesheet" href="navbar1.css?v=1.0">
+    <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include('./partials/navbar1.ejs') %>
+    <div class="header"><h1>POST YOUR AUCTION ITEM HERE</h1></div>
+
+    <div class="container">
+        <form action="/auctions/post/" method="POST"  enctype="multipart/form-data">
+            <div>
+                <label for="userName">userName</label>
+                <input type="text" name="userName" id="userName" class="item_input_details">
+            </div>
+            <div>
+                <label for="itemName">itemName</label>
+                <input type="text" name="itemName" id="itemName" class="item_input_details">
+            </div>
+            <div>
+                <label for="itemImage">itemImage</label>
+                <input type="file" name="itemImage" id="itemImage" class="item_input_details" accept="image/*" required>
+            </div>
+            <div>
+                <label for="startingPrice">startingPrice</label>
+                <input type="number" name="startingPrice" id="startingPrice" class="item_input_details">
+            </div>
+            <div>
+                <label for="category">category</label>
+                <!-- <input type="range" name="startingPrice" id="startingPrice" class="item_input_details"> -->
+                <select id="category" name="category" class="item_input_details">
+                    <option value="">Select a Category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="books">Books</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="mythical_creatures">Mythical creatures</option>
+                    <option value="mythical_weapons">Mythical weapons</option>
+                  </select>
+            </div>
+            <button type="submit" class="sumbit-btn btn active-btn">Auction</button>
+        </form>
+    </div>
+
+    <!-- <script>
+        document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+        
+            try {
+                const response = await fetch('/post', {
+                    method: 'POST',
+                    body: formData,
+                });
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log(result);
+                    window.location.href = '/home';
+                } else {
+                    const error = await response.text();
+                    console.error('Error:', error);
+                    alert('Failed to upload item.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to upload item.');
+            }
+        });
+    </script> -->
+
+</body>
+</html>

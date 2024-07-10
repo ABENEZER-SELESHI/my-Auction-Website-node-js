@@ -1,0 +1,23 @@
+body html {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.header {
+    margin-top: 6rem;
+}
+
+/* Ensure the custom container touches all corners and contains its elements */
+.container {
+    /* background: url('../assets/images/background_image_2.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    background-color: aliceblue;
+    margin: 0;
+    margin-top: 6rem;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+<div class="card-container">
+    <% if (auctions.length > 0) { %> 
+        <% auctions.forEach(auction => { %> 
+            <div class="card">
+                <img src="/<%= auction.itemImage %>" alt="Placeholder image" class="card-img img">
+                <h3><%= auction.itemName %></h3>
+                <h3><%= auction.currentPrice %></h3>
+                <button class="card-btn">BID</button>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <div class="card">
+            <div class="no-items">
+                <h1>no items available</h1>
+            </div>
+        </div>
+    <% } %>
+</div>
